@@ -9,6 +9,7 @@ public class Circle : ShapeBase
 
     public Circle(double radius)
     {
+        if (radius < 0) throw new Exception("Круг с таким радиусом не может существовать");
         Radius = radius;
     }
 
